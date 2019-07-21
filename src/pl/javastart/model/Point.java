@@ -4,16 +4,42 @@ import java.util.Scanner;
 
 public class Point {
 
-    private int[] point = new int[2];
+    private int pointX;
+    private int pointY;
 
-    public int[] getPoint() {
+    public Point(int pointX, int pointY) {
+        this.pointX = pointX;
+        this.pointY = pointY;
+    }
+
+    public Point() {
+    }
+
+    public int getPointX() {
+        return pointX;
+    }
+
+    public void setPointX(int pointX) {
+        this.pointX = pointX;
+    }
+
+    public int getPointY() {
+        return pointY;
+    }
+
+    public void setPointY(int pointY) {
+        this.pointY = pointY;
+    }
+
+    public Point getPoint() {
         Scanner scanner = new Scanner(System.in);
+        Point point = new Point();
 
         System.out.println("Podaj współrzędną x");
-        point[0] = scanner.nextInt();
+        pointX = scanner.nextInt();
         scanner.nextLine();
         System.out.println("Podaj współrzędną y");
-        point[1] = scanner.nextInt();
+        pointY = scanner.nextInt();
         scanner.nextLine();
         scanner.close();
 

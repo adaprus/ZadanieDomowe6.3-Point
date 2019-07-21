@@ -2,14 +2,14 @@ package pl.javastart.model;
 
 public class Calculator {
 
-    public String whichQuadrant(int[] point) {
+    public String whichQuadrant(Point point) {
         String quadrant;
-        if (point[0] != 0 && point[1] != 0) {
-            if (point[0] > 0 && point[1] > 0) {
+        if (point.getPointX() != 0 && point.getPointY() != 0) {
+            if (point.getPointX() > 0 && point.getPointY() > 0) {
                 quadrant = "I";
-            } else if (point[0] < 0 && point[1] > 0) {
+            } else if (point.getPointX() < 0 && point.getPointY() > 0) {
                 quadrant = "II";
-            } else if (point[0] < 0 && point[1] < 0) {
+            } else if (point.getPointX() < 0 && point.getPointY() < 0) {
                 quadrant = "III";
             } else {
                 quadrant = "IV";

@@ -7,8 +7,8 @@ public class QuadrantTest {
     public static void main(String[] args) {
         Point point = new Point();
         Calculator calculator = new Calculator();
-        int array[] = point.getPoint();
+        point.getPoint();
 
-        System.out.println(calculator.whichQuadrant(array));
+        System.out.println(calculator.whichQuadrant(point));
     }
 }
